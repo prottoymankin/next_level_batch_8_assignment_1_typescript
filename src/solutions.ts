@@ -28,3 +28,8 @@ interface Course {
 const getPopularCourses = (courses: Course[], minStudents: number): Course[] => {
   return courses.filter(course => course.isPublished && course.students >= minStudents);
 };
+
+const pluckValues = <T, K extends keyof T> (
+  items: T[], 
+  key: K
+): T[K][] => items.map(item => item[key]);
