@@ -5,4 +5,5 @@ This assignment covers important TypeScript concepts including `Type Alias`, `Ty
 ### Blog Links
 
 [Blog-1: Type Vs Interface](./type-vs-interface.md)
+<br>
 [Blog-2: Type Narrowing](./type-narrowing.md)
