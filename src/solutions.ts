@@ -1,0 +1,1 @@
+const multiplyValue = (value: number, multiplier = 2): number => value * multiplier;
