@@ -6,7 +6,7 @@ It helps typescript to understand which type we are working with and allows us t
 
 There are several ways to perform type narrowing.
 
-1. Using `typeof`
+### Using `typeof`
 
 ```ts
 const printValue = (value: string | number) => {
@@ -20,7 +20,7 @@ const printValue = (value: string | number) => {
 
 Here, typescript checks whether the value is string or number. If the value is string, we can use string methods. Otherwise, typescript knows the value is a number.
 
-2. Using the `in` operator
+### Using the `in` operator
 
 We use `in` operator to check whether a property exists in an object.
 
@@ -48,7 +48,7 @@ const handleUser = (user: User) => {
 
 Here, TypeScript checks whether the `permissions` property exists in the `user` or not. If the property exists in the `user` TypeScript knows that `user` is `Admin`. Otherwise, TypeScript knows that `user` is `Customer`.
 
-3. Using `instanceof`
+### Using `instanceof`
 
 We use instanceof to check whether an object belongs to a particular class.
 
