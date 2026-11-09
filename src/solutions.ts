@@ -16,3 +16,5 @@ const formatCoordinate = (
     const [latitide, longitude, locationName] = coordinates;
     return `Location: ${locationName} (${latitide}, ${longitude})`;
 };
+
+const concatenateArrays = <T>(...arrays: T[][]): T[] => arrays.flat();
