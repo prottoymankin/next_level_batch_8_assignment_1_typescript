@@ -18,3 +18,13 @@ const formatCoordinate = (
 };
 
 const concatenateArrays = <T>(...arrays: T[][]): T[] => arrays.flat();
+
+interface Course {
+  title: string;
+  students: number;
+  isPublished: boolean;
+};
+
+const getPopularCourses = (courses: Course[], minStudents: number): Course[] => {
+  return courses.filter(course => course.isPublished && course.students >= minStudents);
+};
