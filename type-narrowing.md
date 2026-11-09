@@ -2,7 +2,7 @@
 
 Type Narrowing is the process of checking a variable's type and making its type more specific within a particular block of code.
 
-It helps typescript to understand which type we are working with and allows us to safely access its properties and methods.
+It helps TypeScript to understand which type we are working with and allows us to safely access its properties and methods.
 
 There are several ways to perform type narrowing.
 
@@ -18,7 +18,7 @@ const printValue = (value: string | number) => {
 };
 ```
 
-Here, typescript checks whether the value is string or number. If the value is string, we can use string methods. Otherwise, typescript knows the value is a number.
+Here, TypeScript checks whether the value is string or number. If the value is string, we can use string methods. Otherwise, TypeScript knows the value is a number.
 
 ### Using the `in` operator
 
@@ -50,7 +50,7 @@ Here, TypeScript checks whether the `permissions` property exists in the `user` 
 
 ### Using `instanceof`
 
-We use instanceof to check whether an object belongs to a particular class.
+We use `instanceof` to check whether an object belongs to a particular class.
 
 ```ts
 class Dog {

@@ -1,6 +1,6 @@
 ## Type Alias VS Interface in TypeScript
 
-In Typescript, both `type alises` and `interface` are used to define the structure of data. They look very similar but they have some important difference.
+In TypeScript, both `type alises` and `interface` are used to define the structure of data. They look very similar but they have some important difference.
 
 ### 1. Declaration Merging
 
