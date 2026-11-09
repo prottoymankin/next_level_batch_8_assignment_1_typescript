@@ -33,3 +33,28 @@ const pluckValues = <T, K extends keyof T> (
   items: T[], 
   key: K
 ): T[K][] => items.map(item => item[key]);
+
+class Employee {
+  constructor(
+    protected name: string,
+    private _baseSalary: number
+  ) {};
+
+  getDetails() {
+    return `Employee: ${this.name}, Base Salary: ${this._baseSalary}`;
+  };
+};
+
+class Manager extends Employee {
+  constructor(
+    name: string,
+    _baseSalary: number,
+    private _department: string
+  ) {
+    super(name, _baseSalary);
+  };
+
+  getRoleInfo() {
+    return `Manager of ${this._department}: ${this.name}`;
+  };
+};
